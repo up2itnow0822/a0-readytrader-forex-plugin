@@ -1,0 +1,9 @@
+title: ReadyTrader FOREX
+description: Connect your agent to forex markets through the ReadyTrader-FOREX MCP server. Get currency prices, economic calendar data, technical analysis, and execute paper or live trades.
+version: 1.0.0
+settings_sections:
+  - agent
+  - external
+per_project_config: false
+per_agent_config: true
+always_enabled: false
