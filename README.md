@@ -1,3 +1,7 @@
+> ⚠️ **Early Development** — This A0 plugin is a minimal wrapper. The full trading engine lives in [ReadyTrader-FOREX](https://github.com/up2itnow0822/ReadyTrader-FOREX).
+
+---
+
 # ReadyTrader FOREX — Agent Zero Plugin
 
 An Agent Zero plugin that connects your agent to the [ReadyTrader-FOREX](https://github.com/up2itnow0822/ReadyTrader-FOREX) MCP server. Your agent gets forex quotes, economic calendar events, market briefs, sentiment data, and backtesting through a running ReadyTrader-FOREX instance.
@@ -10,6 +14,8 @@ An Agent Zero plugin that connects your agent to the [ReadyTrader-FOREX](https:/
 - **Sentiment analysis** — news and social sentiment for currency pairs
 - **Backtest strategies** — test forex strategies against historical data
 - **Regime detection** — figure out if a pair is trending or chopping
+
+> **Note:** The capabilities above are provided by the ReadyTrader-FOREX MCP server. This plugin is a thin wrapper that exposes those tools to Agent Zero. The trading engine itself is not implemented here.
 
 ## Setup
 
