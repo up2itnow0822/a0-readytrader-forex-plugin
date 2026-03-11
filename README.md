@@ -1,40 +1,43 @@
-> ⚠️ **Early Development** — This A0 plugin is a minimal wrapper. The full trading engine lives in [ReadyTrader-FOREX](https://github.com/up2itnow0822/ReadyTrader-FOREX).
+# a0-readytrader-forex-plugin
 
----
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Agent Zero Plugin](https://img.shields.io/badge/Agent%20Zero-Plugin-blue)](https://github.com/frdel/agent-zero)
 
-# ReadyTrader FOREX — Agent Zero Plugin
+**Agent Zero plugin** for automated FOREX trading via the ReadyTrader strategy engine.
 
-An Agent Zero plugin that connects your agent to the [ReadyTrader-FOREX](https://github.com/up2itnow0822/ReadyTrader-FOREX) MCP server. Your agent gets forex quotes, economic calendar events, market briefs, sentiment data, and backtesting through a running ReadyTrader-FOREX instance.
+## Installation
 
-## What it does
+```bash
+git clone https://github.com/up2itnow0822/a0-readytrader-forex-plugin.git
+cd a0-readytrader-forex-plugin
+pip install -r requirements.txt
+```
 
-- **Get forex prices** — live quotes for any currency pair
-- **Economic calendar** — upcoming events that move forex markets
-- **Market briefs** — quick summary of a pair's current state
-- **Sentiment analysis** — news and social sentiment for currency pairs
-- **Backtest strategies** — test forex strategies against historical data
-- **Regime detection** — figure out if a pair is trending or chopping
+## Usage
 
-> **Note:** The capabilities above are provided by the ReadyTrader-FOREX MCP server. This plugin is a thin wrapper that exposes those tools to Agent Zero. The trading engine itself is not implemented here.
-
-## Setup
-
-1. Install and run the [ReadyTrader-FOREX](https://github.com/up2itnow0822/ReadyTrader-FOREX) MCP server
-2. Drop this plugin into your Agent Zero plugins directory
-3. Configure the MCP server URL in Settings → Agent → ReadyTrader FOREX
-
-Defaults to paper trading. Flip to live when ready.
+```python
+# Add to Agent Zero plugins directory and configure your broker credentials
+```
 
 ## Configuration
 
-| Setting | Default | Description |
-|---------|---------|-------------|
-| `mcp_server_url` | `http://localhost:8000` | ReadyTrader-FOREX server address |
-| `trading_mode` | `paper` | `paper` or `live` |
-| `default_pair` | `EURUSD` | Default currency pair |
-| `max_position_size_usd` | `1000` | Per-trade size cap |
-| `max_leverage` | `10` | Maximum leverage allowed |
+Set the following environment variables:
+```bash
+BROKER_API_KEY=your_key
+BROKER_API_SECRET=your_secret
+```
+
+## Ecosystem
+
+- [agent-wallet-sdk](https://github.com/up2itnow0822/agent-wallet-sdk) — Non-custodial agent wallets (`npm install agentwallet-sdk`)
+- [agentpay-mcp](https://github.com/up2itnow0822/agentpay-mcp) — MCP server for agent payments
+- [webmcp-sdk](https://github.com/up2itnow0822/webmcp-sdk) — Browser-native WebMCP integration
+- [AgentNexus2](https://github.com/up2itnow0822/AgentNexus2) — TaskBridge agent marketplace
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-MIT
+MIT — see [LICENSE](LICENSE)
