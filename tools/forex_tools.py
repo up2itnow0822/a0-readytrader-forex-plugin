@@ -4,7 +4,6 @@ Wraps the ReadyTrader-FOREX MCP server to give agents access to
 forex market data, economic calendars, technical analysis, and trading.
 """
 import json
-from typing import Optional
 
 import httpx
 
