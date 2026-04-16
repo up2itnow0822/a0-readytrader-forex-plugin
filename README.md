@@ -10,6 +10,8 @@
 ```bash
 git clone https://github.com/up2itnow0822/a0-readytrader-forex-plugin.git
 cd a0-readytrader-forex-plugin
+# Install into Agent Zero using the plugin name expected by the index
+cp -r . /path/to/agent-zero/usr/plugins/readytrader_forex
 pip install -r requirements.txt
 ```
 
